@@ -1,4 +1,5 @@
 import containers.Farm;
+import containers.Field;
 import persons.Farmer;
 import persons.Person;
 import persons.Pilot;
@@ -11,6 +12,8 @@ public class Main {
 		Pilot froilanda = new Pilot();
 		CropDuster cropDuster = new CropDuster(froilanda);
     
+    Field field = new Field();
+    
     System.out.println("Farmer said Yeehaw");
-    }
+	}
 }
