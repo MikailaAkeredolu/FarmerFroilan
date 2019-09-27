@@ -2,6 +2,6 @@ package crops;
 
 import interfaces.Produce;
 
-abstract class Crop implements Produce {
+public abstract class Crop implements Produce {
 
 }
