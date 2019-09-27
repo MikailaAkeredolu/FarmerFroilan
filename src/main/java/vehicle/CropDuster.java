@@ -1,9 +1,8 @@
 package vehicle;
 
-public class CropDuster extends vehicle implements AirCraft{
 import persons.Pilot;
 
-public class CropDuster {
+public class CropDuster extends vehicle implements AirCraft{
     private Pilot pilot;
 
     public CropDuster(Pilot pilot){
@@ -14,4 +13,4 @@ public class CropDuster {
 
     }
 }
-}
+

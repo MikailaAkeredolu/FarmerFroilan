@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface Ridable {
+public interface Rideable {
 
     boolean isBeingRidden = false;
 }
