@@ -4,6 +4,7 @@ import persons.Farmer;
 import persons.Person;
 import persons.Pilot;
 import vehicle.CropDuster;
+import vehicle.Tractor;
 
 public class Main {
 public static void main(String[] args) {
@@ -11,6 +12,7 @@ public static void main(String[] args) {
 	Farm farm  = new Farm(froiland);
 	Pilot froilanda = new Pilot();
 	CropDuster cropDuster = new CropDuster(froilanda);
+	Tractor tractor = new Tractor(froilan);
     
     	Field field = new Field();
     
