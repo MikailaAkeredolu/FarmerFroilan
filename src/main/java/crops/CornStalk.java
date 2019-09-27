@@ -1,6 +1,6 @@
 package crops;
 import interfaces.Edible;
-import produce.Corn;
+import produce.EarCorn;
 
 public class CornStalk extends Crop {
     @Override
