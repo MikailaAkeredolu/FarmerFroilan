@@ -4,7 +4,7 @@
 * **Prerequesites:** A `UML` approved by an instructor.
 # UML
 
-<img src="https://raw.githubusercontent.com/aboyce002/FarmerFroilan/update_uml_pic/src/main/resources/UML/farm-test001-Page-2.svg?sanitize=true" alt="Uml" width="100%">
+<img src="https://raw.githubusercontent.com/aboyce002/FarmerFroilan/master/src/main/resources/UML/farm-test001-Page-2.svg?sanitize=true" alt="Uml" width="100%">
 
 # Setting the Plot...
 
