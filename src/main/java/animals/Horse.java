@@ -1,6 +1,7 @@
 package animals;
 
-import interfaces.Ridable;
+import interfaces.NoiseMaker;
+import interfaces.Rideable;
 
-public class Horse extends Animal implements Ridable {
+public class Horse extends Animal implements Rideable {
 }
