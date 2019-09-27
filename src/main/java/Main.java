@@ -10,6 +10,7 @@ public class Main {
 		Farm farm  = new Farm(froiland);
 		Pilot froilanda = new Pilot();
 		CropDuster cropDuster = new CropDuster(froilanda);
-
-	}
+    
+    System.out.println("Farmer said Yeehaw");
+    }
 }
