@@ -3,7 +3,7 @@
 * **Purpose:** To demonstrate [multi-inheritence design issues](https://www.geeksforgeeks.org/java-and-multiple-inheritance/)
 * **Prerequesites:** A `UML` approved by an instructor.
 # UML
-![alt text](https://github.com/aboyce002/FarmerFroilan/raw/master/src/main/resources/UML/farm-test001.Page-2.svg?sanitize=true)
+![alt text](https://raw.githubusercontent.com/aboyce002/FarmerFroilan/update_uml_pic/src/main/resources/UML/farm-test001-Page-2.svg?sanitize=true)
 
 # Setting the Plot...
 
