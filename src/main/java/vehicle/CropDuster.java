@@ -1,5 +1,6 @@
 package vehicle;
 
+public class CropDuster extends vehicle implements AirCraft{
 import persons.Pilot;
 
 public class CropDuster {
@@ -8,8 +9,9 @@ public class CropDuster {
     public CropDuster(Pilot pilot){
         this.pilot = pilot;
     }
-
+    
     public static void fertilize(String tmp){
 
     }
+}
 }

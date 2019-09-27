@@ -11,6 +11,9 @@ public class Main {
 		Farm farm  = new Farm(froiland);
 		Pilot froilanda = new Pilot();
 		CropDuster cropDuster = new CropDuster(froilanda);
-        Field field = new Field();
+    
+    Field field = new Field();
+    
+    System.out.println("Farmer said Yeehaw");
 	}
 }
