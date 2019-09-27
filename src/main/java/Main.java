@@ -8,8 +8,8 @@ import vehicle.Tractor;
 
 public class Main {
 public static void main(String[] args) {
-	Farmer froiland = new Farmer();
-	Farm farm  = new Farm(froiland);
+	Farmer froilan = new Farmer();
+	Farm farm  = new Farm(froilan);
 	Pilot froilanda = new Pilot();
 	CropDuster cropDuster = new CropDuster(froilanda);
 	Tractor tractor = new Tractor(froilan);
