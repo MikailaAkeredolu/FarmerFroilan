@@ -1,9 +1,7 @@
 package interfaces;
 
-import interfaces.Rideable;
-
 public interface Rider {
-    void mount(Rideable ride);
-    void dismount(Rideable ride);
-    void ride(Rideable ride);
+    void mount(Ridable ride);
+    void dismount(Ridable ride);
+    void ride(Ridable ride);
 }
