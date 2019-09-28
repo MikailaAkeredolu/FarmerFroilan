@@ -4,5 +4,13 @@ import java.util.ArrayList;
 import crops.*;
 
 public class CropRow {
-	public ArrayList<Crop> crops = new ArrayList<Crop>();
+	private ArrayList<Crop> crops = new ArrayList<Crop>();
+
+	public ArrayList<Crop> getCrops() {
+		return crops;
+	}
+
+	public void addCrop(Crop crop) {
+		this.crops.add(crop);
+	}
 }
