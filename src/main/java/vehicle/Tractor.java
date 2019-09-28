@@ -1,6 +1,7 @@
 package vehicle;
+import interfaces.FarmVehicle;
 import persons.Farmer;
-public class Tractor extends vehicle implements FarmVehicle{
+public class Tractor extends vehicle implements FarmVehicle {
 
     private Farmer farmer;
 
@@ -14,5 +15,15 @@ public class Tractor extends vehicle implements FarmVehicle{
     @Override
     public void makeNoise() {
         System.out.println("I'm tractoring!");
+    }
+
+    @Override
+    public void operate() {
+
+    }
+
+    @Override
+    public void isFarmTaskCompleted(boolean status) {
+
     }
 }

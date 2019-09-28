@@ -1,6 +1,7 @@
 package persons;
 
 import interfaces.Edible;
+import interfaces.Rideable;
 
 public class Pilot extends Person {
 
@@ -12,5 +13,20 @@ public class Pilot extends Person {
 	@Override
 	public void makeNoise() {
 		System.out.println("Weeeee, im high af (in the sky)");
+	}
+
+	@Override
+	public void mount(Rideable ride) {
+
+	}
+
+	@Override
+	public void dismount(Rideable ride) {
+
+	}
+
+	@Override
+	public void ride(Rideable ride) {
+
 	}
 }
