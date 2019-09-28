@@ -11,6 +11,6 @@ public class Pilot extends Person {
 
 	@Override
 	public void makeNoise() {
-
+		System.out.println("Weeeee, im high af (in the sky)");
 	}
 }

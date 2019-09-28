@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface Rider {
-    void mount(Ridable ride);
-    void dismount(Ridable ride);
-    void ride(Ridable ride);
+    void mount(Rideable ride);
+    void dismount(Rideable ride);
+    void ride(Rideable ride);
 }
