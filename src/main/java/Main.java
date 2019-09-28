@@ -11,37 +11,37 @@ import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
-		Farmer froilan = new Farmer();
-		FarmHouse farmHouse = new FarmHouse();
-		Farm farm  = new Farm(froilan, farmHouse);
-		Field field = new Field();
+	Farmer froilan = new Farmer();
+	FarmHouse farmHouse = new FarmHouse();
+	Farm farm  = new Farm(froilan, farmHouse);
+	Field field = new Field();
 
-		// generate crop rows in the field
-		addCropRows(field, 5);
+	// generate crop rows in the field
+	addCropRows(field, 5);
 
-		//generate crops in each of those crop rows
-		//Even number rows get corn, odd rows get tomato
-		//20 crops per row
-		for (int i = 0; i < field.getCropRows().size(); i++){
-			if (i % 2 == 0) {
-				for (int j=0; j < 20; j++){
-					field.addCrops(i, new CornStalk());
-				}
-			} else {
-				for (int j=0; j < 20; j++){
-					field.addCrops(i, new TomatoPlant());
-				}
+	//generate crops in each of those crop rows
+	//Even number rows get corn, odd rows get tomato
+	//20 crops per row
+	for (int i = 0; i < field.getCropRows().size(); i++){
+		if (i % 2 == 0) {
+			for (int j=0; j < 20; j++){
+				field.addCrops(i, new CornStalk());
+			}
+		} else {
+			for (int j=0; j < 20; j++){
+				field.addCrops(i, new TomatoPlant());
 			}
 		}
+	}
 
-		addChickens(farm);
-		addHorses(farm);
+	addChickens(farm);
+	addHorses(farm);
 
-		Pilot froilanda = new Pilot();
-		CropDuster cropDuster = new CropDuster(froilanda);
-		Tractor tractor = new Tractor(froilan);
+	Pilot froilanda = new Pilot();
+	CropDuster cropDuster = new CropDuster(froilanda);
+	Tractor tractor = new Tractor(froilan);
 
-		System.out.println("Farmer said Yeehaw");
+	System.out.println("Farmer said Yeehaw");
 
 	// some testing of shit to make sure it works
 	Pilot froilanda = new Pilot();
