@@ -1,10 +1,13 @@
 package vehicle;
 
+import interfaces.AirCraft;
+import interfaces.FarmVehicle;
 import persons.Pilot;
 
-public class CropDuster extends vehicle implements AirCraft{
+public class CropDuster extends vehicle implements AirCraft, FarmVehicle {
   
     private Pilot pilot;
+    private boolean isTaskComplete;
 
     public CropDuster(Pilot pilot){
         this.pilot = pilot;
@@ -23,6 +26,16 @@ public class CropDuster extends vehicle implements AirCraft{
     public void makeNoise() {
         // sound a crop duster makes when dusting  crop rows
         System.out.println("woooosh tatatatata wooosh tatatata");
+    }
+
+    @Override
+    public void operate() {
+
+    }
+
+    @Override
+    public void isFarmTaskCompleted(boolean status) {
+        this.isTaskComplete = status;
     }
 }
 
