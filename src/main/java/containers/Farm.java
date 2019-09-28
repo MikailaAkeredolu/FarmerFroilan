@@ -15,7 +15,21 @@ public class Farm {
 		this.farmhouse = farmHouse;
 	}
 
+	public void addStable(Stable stable){
+		this.stables.add(stable);
+	}
 
+	public void removeStable(Stable stable){
+		this.stables.remove(stable);
+	}
+
+	public void addChickenCoop(ChickenCoop coop) {
+		this.chickenCoops.add(coop);
+	}
+
+	public void removeChickenCoop(ChickenCoop coop){
+		this.chickenCoops.remove(coop);
+	}
 
 	public Farmer getFarmer() {
 		return farmer;
