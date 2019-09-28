@@ -1,13 +1,14 @@
-import containers.CropRow;
-import containers.Farm;
-import containers.FarmHouse;
-import containers.Field;
+import animals.Chicken;
+import animals.Horse;
+import containers.*;
 import persons.Farmer;
 import persons.Person;
 import persons.Pilot;
 import vehicle.CropDuster;
 import vehicle.Tractor;
 import crops.*;
+
+import java.util.ArrayList;
 
 public class Main {
 public static void main(String[] args) {
@@ -37,10 +38,46 @@ public static void main(String[] args) {
 			}
 		}
 	}
+
+	addChickens(farm);
+	addHorses(farm);
+
 	Pilot froilanda = new Pilot();
 	CropDuster cropDuster = new CropDuster(froilanda);
 	Tractor tractor = new Tractor(froilan);
 
 	System.out.println("Farmer said Yeehaw");
 	}
+
+	public static void addChickens(Farm f){
+		ArrayList<ChickenCoop> coops = new ArrayList<>();
+		for(int x = 0; x < 4; x++)
+		{
+			ChickenCoop coop = new ChickenCoop();
+
+			ArrayList<Chicken> chickens = new ArrayList<>();
+			for(int i = 0; i < 15; i++)
+				chickens.add(new Chicken());
+
+			coop.setChickens(chickens);
+			coops.add(coop);
+		}
+		f.setChickenCoops(coops);
+	}
+
+    public static void addHorses(Farm f){
+        ArrayList<Stable> stables = new ArrayList<>();
+        for(int x = 0; x < 3; x++)
+        {
+            Stable stable = new Stable();
+
+            ArrayList<Horse> horses = new ArrayList<>();
+            for(int i = 0; i < 10; i++)
+                horses.add(new Horse());
+
+            stable.setHorses(horses);
+            stables.add(stable);
+        }
+        f.setStables(stables);
+    }
 }
