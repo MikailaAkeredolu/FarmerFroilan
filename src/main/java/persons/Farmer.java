@@ -2,11 +2,10 @@ package persons;
 
 import interfaces.Botanist;
 import interfaces.Edible;
-import interfaces.Rider;
 import interfaces.Rideable;
 import containers.CropRow;
 
-public class Farmer extends Person implements Rider, Botanist {
+public class Farmer extends Person implements Botanist {
     public void mount(Rideable ride){
 
     };

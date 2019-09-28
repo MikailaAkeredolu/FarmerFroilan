@@ -42,6 +42,23 @@ public class Main {
 		Tractor tractor = new Tractor(froilan);
 
 		System.out.println("Farmer said Yeehaw");
+
+	// some testing of shit to make sure it works
+	Pilot froilanda = new Pilot();
+	CropDuster cropDuster = new CropDuster(froilanda);
+	Tractor tractor = new Tractor(froilan);
+
+	tractor.makeNoise();
+	froilan.mount(tractor);
+	froilan.ride(tractor);
+	froilan.makeNoise();
+
+	cropDuster.makeNoise();
+	froilanda.mount(cropDuster);
+	froilanda.ride(cropDuster);
+	cropDuster.fly();
+	froilanda.makeNoise();
+
 	}
 
 	public static void addChickens(Farm f){
