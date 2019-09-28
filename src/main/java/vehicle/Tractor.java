@@ -10,4 +10,9 @@ public class Tractor extends vehicle implements FarmVehicle{
     public static void harvest(String crops){
 
     }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("I'm tractoring!");
+    }
 }
