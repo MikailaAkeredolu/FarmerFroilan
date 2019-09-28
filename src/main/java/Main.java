@@ -1,5 +1,6 @@
 import containers.CropRow;
 import containers.Farm;
+import containers.FarmHouse;
 import containers.Field;
 import persons.Farmer;
 import persons.Person;
@@ -11,7 +12,8 @@ import crops.*;
 public class Main {
 public static void main(String[] args) {
 	Farmer froilan = new Farmer();
-	Farm farm  = new Farm(froilan);
+	FarmHouse farmHouse = new FarmHouse();
+	Farm farm  = new Farm(froilan, farmHouse);
 	Field field = new Field();
 
 	// generate crop rows in the field

@@ -10,9 +10,12 @@ public class Farm {
 	private ArrayList<Stable> stables = new ArrayList<>();
 	private ArrayList<ChickenCoop> chickenCoops = new ArrayList<>();
 
-	public Farm(Farmer farmer){
+	public Farm(Farmer farmer, FarmHouse farmHouse){
 		this.farmer = farmer;
+		this.farmhouse = farmHouse;
 	}
+
+
 
 	public Farmer getFarmer() {
 		return farmer;
