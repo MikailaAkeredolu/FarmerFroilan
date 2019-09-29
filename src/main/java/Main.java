@@ -37,10 +37,6 @@ public class Main {
 	addChickens(farm);
 	addHorses(farm);
 
-	Pilot froilanda = new Pilot();
-	CropDuster cropDuster = new CropDuster(froilanda);
-	Tractor tractor = new Tractor(froilan);
-
 	System.out.println("Farmer said Yeehaw");
 
 	// some testing of shit to make sure it works
