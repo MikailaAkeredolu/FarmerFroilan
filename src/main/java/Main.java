@@ -58,14 +58,19 @@ public class Main {
 	}
 
 	public static void addChickens(Farm f){
+		int chickenCount = 15;
 		ArrayList<ChickenCoop> coops = new ArrayList<>();
 		for(int x = 0; x < 4; x++)
 		{
 			ChickenCoop coop = new ChickenCoop();
+			int addChic = (x==3) ? chickenCount : 1 + (int)(Math.random()*(((chickenCount-(4-(x+1))) - 1 ) + 1));
 
 			ArrayList<Chicken> chickens = new ArrayList<>();
-			for(int i = 0; i < 15; i++)
+			for(int i = 0; i < addChic; i++)
+			{
 				chickens.add(new Chicken());
+				chickenCount--;
+			}
 
 			coop.setChickens(chickens);
 			coops.add(coop);
@@ -74,14 +79,19 @@ public class Main {
 	}
 
     public static void addHorses(Farm f){
+		int horseCount = 10;
         ArrayList<Stable> stables = new ArrayList<>();
         for(int x = 0; x < 3; x++)
         {
             Stable stable = new Stable();
+			int addHorse = (x==2) ? horseCount : 1 + (int)(Math.random()*(((horseCount-(3-(x+1))) - 1 ) + 1));
 
             ArrayList<Horse> horses = new ArrayList<>();
-            for(int i = 0; i < 10; i++)
-                horses.add(new Horse());
+            for(int i = 0; i < addHorse; i++)
+			{
+				horses.add(new Horse());
+				horseCount--;
+			}
 
             stable.setHorses(horses);
             stables.add(stable);
