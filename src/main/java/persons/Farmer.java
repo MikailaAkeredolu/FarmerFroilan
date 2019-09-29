@@ -6,6 +6,10 @@ import interfaces.Rideable;
 import containers.CropRow;
 
 public class Farmer extends Person implements Botanist {
+    public Farmer(String name) {
+        super(name);
+    }
+
     public void mount(Rideable ride){
 
     };

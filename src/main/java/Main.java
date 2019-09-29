@@ -1,8 +1,13 @@
 import animals.Chicken;
+import animals.Dragon;
 import animals.Horse;
+import animals.Unicorn;
 import containers.*;
+import persons.Baker;
 import persons.Farmer;
 import persons.Pilot;
+import produce.Cupcake;
+import produce.EarCorn;
 import vehicle.CropDuster;
 import vehicle.Tractor;
 import crops.*;
@@ -11,7 +16,7 @@ import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
-	Farmer froilan = new Farmer();
+	Farmer froilan = new Farmer("Froilan");
 	FarmHouse farmHouse = new FarmHouse();
 	Farm farm  = new Farm(froilan, farmHouse);
 	Field field = new Field();
@@ -40,7 +45,7 @@ public class Main {
 	System.out.println("Farmer said Yeehaw");
 
 	// some testing of shit to make sure it works
-	Pilot froilanda = new Pilot();
+	Pilot froilanda = new Pilot("Froilanda");
 	CropDuster cropDuster = new CropDuster(froilanda);
 	Tractor tractor = new Tractor(froilan);
 
@@ -55,6 +60,26 @@ public class Main {
 	cropDuster.fly();
 	froilanda.makeNoise();
 
+		// for spacing
+		System.out.println();
+		// testing mystical animals
+		Baker joe = new Baker("Joe");
+		Cupcake cupcake = joe.bakeCupcake();
+		Chicken randomChicken = new Chicken();
+		EarCorn corn = new EarCorn();
+
+		Dragon sephira = new Dragon("Sephira");
+		sephira.eat(randomChicken);
+		sephira.fly();
+		sephira.makeNoise();
+		System.out.print(sephira.getName() + " ");
+		sephira.usePower();
+
+		Unicorn unicorn = new Unicorn("Xenia");
+		unicorn.eat(cupcake);
+		unicorn.makeNoise();
+		System.out.print(unicorn.getName() + " ");
+		unicorn.usePower();
 	}
 
 	public static void addChickens(Farm f){

@@ -5,6 +5,10 @@ import interfaces.Rideable;
 
 public class Pilot extends Person {
 
+	public Pilot(String name) {
+		super(name);
+	}
+
 	@Override
 	public void eat(Edible edible) {
 
