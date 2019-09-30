@@ -1,9 +1,10 @@
 package animals;
 
 import interfaces.Edible;
+import interfaces.Rideable;
 import produce.Cupcake;
 
-public class Unicorn extends MysticalAnimal{
+public class Unicorn extends MysticalAnimal implements Rideable {
 
 	public Unicorn(String name){
 		super(name);
